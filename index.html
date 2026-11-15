@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-HK">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart peephole fit checker | Elechid 音立</title>
+<meta name="description" content="Compare door thickness, existing hole diameter and indoor space for EZVIZ DP2C, DP2 2K and EP4. Leave unmeasured fields blank.">
+<link rel="canonical" href="https://elechid.github.io/smart-peephole-fit-checker/">
+<link rel="alternate" hreflang="en-HK" href="https://elechid.github.io/smart-peephole-fit-checker/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://elechid.github.io/smart-peephole-fit-checker/zh.html">
+<link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script>
+</head>
+<body>
+<header><nav><a href="https://elechid.com/en/">Elechid 音立</a><a href="zh.html" lang="zh-Hant">繁體中文</a></nav></header>
+<main><h1>Smart peephole fit checker</h1><p>Compare door thickness, existing hole diameter and indoor space for EZVIZ DP2C, DP2 2K and EP4. Leave unmeasured fields blank.</p>
+<p>All three accept doors 35–105 mm thick. A measured 15 mm hole passes the diameter check for DP2 2K and EP4. DP2C needs at least 16.5 mm.</p>
+<section class="measure" aria-label="Door measurements"><label>Door thickness at the peephole (mm)<input type="number" inputmode="decimal" min="0" step="any" id="thickness"></label><label>Clear hole diameter after removing the old viewer (mm)<input type="number" inputmode="decimal" min="0" step="any" id="hole"></label><label>Shallowest indoor clearance through the door swing (mm)<input type="number" inputmode="decimal" min="0" step="any" id="depth"></label></section>
+<p class="hint">EZVIZ lists the screen and base dimensions. Use the actual unit or mounting diagram to locate it, measure the nearest obstruction through the full swing, and check room to fit, remove and charge the screen. Clearance equal to the unit depth still requires confirmation.</p>
+<div class="cards"><article data-hole-min="16.5" data-depth="24.5">
+<h2>EZVIZ DP2C</h2><p class="sku">CS-DP2C</p>
+<dl>
+<dt>Door thickness</dt><dd>35–105 mm <output data-result="thickness">Measure to confirm</output></dd>
+<dt>Hole diameter</dt><dd>16.5–50 mm <output data-result="hole">Measure to confirm</output></dd>
+<dt>Indoor space</dt><dd>Screen and base: 115.5 × 85.5 × 24.5 mm <output data-result="space">Measure to confirm</output></dd>
+</dl>
+<label>Check the frame, wall, lock and charging cable against this model’s mounting position<select><option value="">Not checked</option><option value="yes">Fits with room for fitting, removal and charging</option><option value="no">Obstructed or insufficient working room</option></select></label>
+<p class="links"><a href="https://www.ezviz.com/uk/product/DP2C-GLD/62467">EZVIZ specifications</a> · <a href="https://elechid.com/en/products/ezviz-dp2c-1080p-smart-door-viewer-with-4-3-inch-screen">Elechid product page</a></p>
+</article>
+<article data-hole-min="14" data-depth="24.5">
+<h2>EZVIZ DP2 2K</h2><p class="sku">CS-DP2-R100-6E3WPFBS</p>
+<dl>
+<dt>Door thickness</dt><dd>35–105 mm <output data-result="thickness">Measure to confirm</output></dd>
+<dt>Hole diameter</dt><dd>14–50 mm <output data-result="hole">Measure to confirm</output></dd>
+<dt>Indoor space</dt><dd>Screen and base: 115.5 × 85.5 × 24.5 mm <output data-result="space">Measure to confirm</output></dd>
+</dl>
+<label>Check the frame, wall, lock and charging cable against this model’s mounting position<select><option value="">Not checked</option><option value="yes">Fits with room for fitting, removal and charging</option><option value="no">Obstructed or insufficient working room</option></select></label>
+<p class="links"><a href="https://www.ezviz.com/product/dp2-2k/47961">EZVIZ specifications</a> · <a href="https://elechid.com/en/products/ezviz-dp2-2k-smart-door-viewer-with-4-3-inch-touch-screen">Elechid product page</a></p>
+</article>
+<article data-hole-min="14" data-depth="28.4">
+<h2>EZVIZ EP4</h2><p class="sku">CS-EP4</p>
+<dl>
+<dt>Door thickness</dt><dd>35–105 mm <output data-result="thickness">Measure to confirm</output></dd>
+<dt>Hole diameter</dt><dd>14–50 mm <output data-result="hole">Measure to confirm</output></dd>
+<dt>Indoor space</dt><dd>Screen and base: 103 × 142.4 × 28.4 mm <output data-result="space">Measure to confirm</output></dd>
+</dl>
+<label>Check the frame, wall, lock and charging cable against this model’s mounting position<select><option value="">Not checked</option><option value="yes">Fits with room for fitting, removal and charging</option><option value="no">Obstructed or insufficient working room</option></select></label>
+<p class="links"><a href="https://m.ezviz.com/product/ep4/70199">EZVIZ specifications</a> · <a href="https://elechid.com/en/products/ezviz-ep4-4k-smart-door-viewer-touch-screen">Elechid product page</a></p>
+</article></div>
+</main><footer><a href="https://github.com/Elechid/smart-peephole-fit-checker">Source code</a> · <a href="https://github.com/Elechid">Elechid tool index</a></footer>
+</body></html>

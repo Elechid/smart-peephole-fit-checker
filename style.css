@@ -1,0 +1,26 @@
+:root { font: 100%/1.55 system-ui, sans-serif; color: #182b32; background: #f0f6f5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { background: #163e3c; }
+nav, main, footer { max-width: 70rem; margin: auto; padding: 1rem clamp(1rem,4vw,2.5rem); }
+nav { display: flex; justify-content: space-between; }
+nav a { color: white; font-weight: 700; }
+a { color: #095650; text-underline-offset: .18em; }
+h1 { font-size: clamp(1.8rem,5vw,3.2rem); margin: 1rem 0 .55rem; line-height: 1.12; }
+h2 { margin: 0; font-size: 1.35rem; }
+p { max-width: 75ch; }
+.measure, .cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .85rem; }
+.measure { border-radius: .8rem; background: #dcece8; padding: .95rem; }
+label { display: grid; gap: .35rem; font-weight: 600; }
+input, select { width: 100%; min-width: 0; min-height: 44px; padding: .45rem; font: inherit; color: inherit; background: white; border: 1px solid #697f7a; border-radius: .4rem; }
+article { background: white; border: 1px solid #c8ddd7; border-radius: .8rem; padding: 1rem; overflow-wrap: anywhere; }
+.sku, .hint { color: #435954; }
+.sku { margin: .2rem 0 .75rem; }
+dt { font-weight: 700; }
+dd { margin: 0 0 .65rem; }
+output { display: table; border-radius: .3rem; padding: .1rem .5rem; margin-top: .2rem; font-weight: 700; }
+.yes { color: #125137; background: #ddf4e7; }
+.no { color: #822b2b; background: #fbe5e5; }
+.pending { color: #674904; background: #fff1d3; }
+:focus-visible { outline: 3px solid #107a70; outline-offset: 2px; }
+@media (max-width: 52rem) { .measure, .cards { grid-template-columns: 1fr; } }
